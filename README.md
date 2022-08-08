@@ -29,6 +29,14 @@ We apply point-light walkers to operationalize human motion. These walkers origi
 
 <img width="1920" alt="background point-light walker" src="https://user-images.githubusercontent.com/69513270/183389265-f4348d64-6e4a-4a72-94c2-f70c2190b449.png">
 
+#### Walker type
+You can choose between a normal walker and a scrambled walker. Scrambling relocates the point positions but keeps the motion trajectories the same. Thus, the biological form is destroyed but the biological motion trajectories are still present. Comparing data for normal and scrambled walker types enables to study specific effects for biological motion. Walker type is programmed as blocking variable. In other words, you determine the walker type for the whole stimulus presentation. The next time you run the script, you can change the walker type.
+
+
+https://user-images.githubusercontent.com/69513270/182679840-846a7f2e-ded9-424b-aa22-48a96b42a7ed.mov
+
+
+
 ## Walker conditions
 To decisively explore the influence of the components of biological motion on heading perception from optic flow analysis, we designed four conditions: static, natural locomotion, only translation, and only articulation.
 In the static condition, the walkers resemble static figures. Here, the walkers kept their posture at a fixed position. The natural locomotion condition presents the walkers naturally moving through the world and swinging their limbs. This condition combines both elements of biological motion. The only translation condition displayed walkers sliding through the world without any limb motion. So the walkers resembles figure skaters moving in the direction they were facing. Conversely to the only translation condition, walkers in the only articulation condition moved their limbs without physical translation. This condition is imaginable as pedestrians on a treadmill. 
