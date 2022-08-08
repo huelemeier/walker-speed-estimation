@@ -17,6 +17,11 @@ Download all the files and add them to your Matlab folder. Within your Matlab fo
 - sample_walker_1.2: motion data for point_light walker with faster speed
 - gravel.rgb.tiff: ground type gravel
 
+## Run the script
+Open the script in Matlab and click on 'run'. Matlab automatically requires your input in the command line, and subsequently asks questions. Enter the participant id, session number, and further information about the scene (grond, motion parallax, walkers at different depth) subsequently. When done, Psychtoolbox automatically opens a window and runs the script in that window. Bildschirmfoto 2022-08-08 um 10 04 15
+
+You will see the stimulus presentation. After each presentation, you are required to estimate the walkers' average walking speed. For this purpose, a single walker appears. You can modify its walking speed by moving the mouse horizontally. Vertical movements switch the motion direction. Confirm your answer by pressing the left mouse buttom. Subsequently, the next trial starts. The script finishes when all trials are done.
+
 ## Technical information about the scene
 ## Point-light walkers
 We apply point-light walkers to operationalize human motion. These walkers originate from the motion-tracking data of a single walking human (de Lussanet et al., 2008). Each walker consists of 12 points corresponding to the ankles of a human body (knee, hip, hands, elbow, and shoulder joints). The walkers face either collectively to the left (-90°) or right (90°). 
@@ -28,12 +33,9 @@ To decisively explore the influence of the components of biological motion on he
 In the static condition, the walkers resemble static figures. Here, the walkers kept their posture at a fixed position. The natural locomotion condition presents the walkers naturally moving through the world and swinging their limbs. This condition combines both elements of biological motion. The only translation condition displayed walkers sliding through the world without any limb motion. So the walkers resembles figure skaters moving in the direction they were facing. Conversely to the only translation condition, walkers in the only articulation condition moved their limbs without physical translation. This condition is imaginable as pedestrians on a treadmill. 
 Note these conditions are autamtically displayed in randomized order.
 
-### Articulation speed
+## Articulation speed
 In real-life scenarios, humans differ in their translation, and thus, articulation speed (Masselink & Lappe, 2015). To keep the scene close to reality, we manipulate the articulation and translation speed of the walkers. The original motion-tracking data have a matching translation speed of 0.013 (0.6m/s.). By linear interpolation (see Matlab Skript extrapolatewalkerdata.m), we create two more motion files with either 0.8 (slower) or 1.2 times (faster) the original articulation speed. Translation speed is adjusted accordingly. The three different articulation and translation speeds are divided equally among the 30 point-light walkers. The average walker speed remains constant at 0.013 at any trial. Randomized position in depth combined with a randomized starting position in the gait cycle let the crowd appear naturally.
 
-### Walker position
-The walkers' positions are uniformly sampled in the frustum. We limit their position in depth to 26 m maximum so that walkers appear at an adequate sight. This limited in-depth position is beneficial for leaving crowds combined with slow observer speeds. When walkers disappear from the frustum, we replace them at 23 m in depth and correct for the movement speed of the observer.
-To avoid collisions with static or approaching walkers, we place the walkers 1.5 m each left and right past the observer. Such a replacement creates a kind of tunnel to form through the crowd. Shortly before the end of the trial (maximum 600 frames left), walkers disappearing from the frustum can be placed within the tunnel without any risk of collision. This setting does not reveal any information about travel distance or travel velocity. But it makes the scene look realistic. Leaving crowds are located without such replacements within the frustum. 
 
 ## Motion parallax and independent optic flow
 You can change the degree of depth information available in the scene If motion parallax is selected, the walkers stay at different depths in the room. While some of the group's position ranged between 7 and 9 m, the other ones are twice as far away, i.e., 14 to 18 m in depth. We adjust the walkers' size and points according to their positioning in the environment. Due to the positioning of the walkers in space, the scene is designed to induce motion parallax cues (Gibson, 1950).
