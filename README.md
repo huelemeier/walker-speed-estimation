@@ -6,11 +6,12 @@ Obersevers encounter a group of point-light walkers. Walkers' limb motion combin
 These scripts are optimized for MatLab 2021b with Psychtoolbox (http://psychtoolbox.org/download.html) and OpenGL add-on libraries from the Psychtoolbox. So what needs to be installed on you computer are Matlab and Psychtoolbox. 
 
 ## Set-up
-Download all the files and add them to your Matlab folder. Within your Matlab folder, create a subfolder names "functions". Move the script "geFrustum" to this subfolder. 
+Download all the files and add them to your Matlab folder. Within your Matlab folder, create a subfolder names "functions". Move the scripts "geFrustum" and "genscramwalker" to this subfolder. 
 
 ## Explanation of the scripts
 - github_background_illusion.m: This is the main script creating the scene. 
 - getFrustum.m: this script generates frustum data. The main script uses this script to do some calculations. No need to adapt this script.
+- genscramwalker.m: This script generates scrambled walker by randomly replacing the position of points. Motion trajectories are kept unchanged.
 - extrapolatewalkerdata.m: we extrapolated walker motion data (sample_walker3) to generate slightly slower and faster articulating walkers. The matching translation speed is generated in the main script. You do not need to do anything with that script. If you want to, you can extrapolate your own walker motion speeds with that script. The main script does not use this script.
 - sample_walker3: motion data for point_light walker with normal speed
 - sample_walker_0.8: motion data for point_light walker with slower speed
@@ -34,7 +35,7 @@ In the static condition, the walkers resemble static figures. Here, the walkers 
 Note these conditions are autamtically displayed in randomized order.
 
 ## Articulation speed
-In real-life scenarios, humans differ in their translation, and thus, articulation speed (Masselink & Lappe, 2015). To keep the scene close to reality, we manipulate the articulation and translation speed of the walkers. The original motion-tracking data have a matching translation speed of 0.013 (0.6m/s.). By linear interpolation (see Matlab Skript extrapolatewalkerdata.m), we create two more motion files with either 0.8 (slower) or 1.2 times (faster) the original articulation speed. Translation speed is adjusted accordingly. The three different articulation and translation speeds are divided equally among the 30 point-light walkers. The average walker speed remains constant at 0.013 at any trial. Randomized position in depth combined with a randomized starting position in the gait cycle let the crowd appear naturally.
+In real-life scenarios, humans differ in their translation, and thus, articulation speed (Masselink & Lappe, 2015). To keep the scene close to reality, we manipulate the articulation and translation speed of the walkers. The original motion-tracking data have a matching translation speed of 0.013 (0.6m/s.). By linear interpolation (see Matlab Skript extrapolatewalkerdata.m), we create two more motion files with either 0.8 (slower) or 1.2 times (faster) the original articulation speed. Translation speed is adjusted accordingly. Randomized position in depth combined with a randomized starting position in the gait cycle let the crowd appear naturally.
 
 
 ## Motion parallax and independent optic flow
