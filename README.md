@@ -63,3 +63,7 @@ The experimental world spans over 20 m scene depths. We placed a visible ground 
 
 ## Velocity estimation // Procedure
 Participants' task is to reproduce the walker velocity (not self-motion velocity) by adjusting the translation speed of a single walker. Moving the computer mouse along the horizontal line changes the translation speed. Translation speed can also set to 0. If the walker disappears from the viewing frustum, the script automatically relocates it to the viewing frustum. 
+
+
+https://user-images.githubusercontent.com/69513270/220876935-5cf5cb2d-c025-42c1-950d-87bc50e7eca6.mov
+
