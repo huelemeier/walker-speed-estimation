@@ -2,6 +2,10 @@
 Obersevers encounter a group of point-light walkers. Walkers' limb motion combined with walking speed varies. Participant's task is so reproduce the walking speed of the crowd.
 
 
+
+https://user-images.githubusercontent.com/69513270/220873695-ce75bd3f-b2b9-43d7-b538-5b64a985bd64.mov
+
+
 ## Technical requirements and set-up
 These scripts are optimized for MatLab 2021b with Psychtoolbox (http://psychtoolbox.org/download.html) and OpenGL add-on libraries from the Psychtoolbox. So what needs to be installed on you computer are Matlab and Psychtoolbox. 
 
