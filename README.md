@@ -23,7 +23,7 @@ Download all the files and add them to your Matlab folder. Within your Matlab fo
 - gravel.rgb.tiff: ground type gravel
 
 ## Run the script
-Open the script in Matlab and click on 'run'. Matlab automatically requires your input in the command line, and subsequently asks questions. Enter the participant id, session number, and further information about the scene (grond, motion parallax, walkers at different depth) subsequently. When done, Psychtoolbox automatically opens a window and runs the script in that window. Bildschirmfoto 2022-08-08 um 10 04 15
+Open the script in Matlab and click on 'run'. Matlab automatically requires your input in the command line, and subsequently asks questions. Enter the participant id, session number, and further information about the scene (grond, motion parallax, walkers at different depth) subsequently. When done, Psychtoolbox automatically opens a window and runs the script in that window. 
 
 You will see the stimulus presentation. After each presentation, you are required to estimate the walkers' average walking speed. For this purpose, a single walker appears. You can modify its walking speed by moving the mouse horizontally. Vertical movements switch the motion direction. Confirm your answer by pressing the left mouse buttom. Subsequently, the next trial starts. The script finishes when all trials are done.
 
