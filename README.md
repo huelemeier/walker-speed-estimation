@@ -56,7 +56,7 @@ You can change the degree of depth information available in the scene If motion 
 You can also add a grey gravel ground to the scene. The ground provides independent optic flow, and thus, independent self-motion information. If no ground is visible, the points of the walkers combine biological motion and simulated self-motion. Here are some example stimuli with increasingly more depth and self-motion information:
 
 ## Experimental scene
-The experimental world spans over 20 m scene depths. We placed a visible ground at eye height (1.60 m). Its appearance is structured (gravel). The gravel ground provides independent optic flow from the simulated observer motion. The ground is programmed as blocking variable. In other words, you determine the ground appearance (black vs gravel) for the whole stimulus presentation. The next time you run the script, you can change the ground. 
+The experimental world spans over 20 m scene depths. We placed a visible ground plane at eye height (1.60 m). Its appearance is structured (gravel). The gravel ground provides independent optic flow from the simulated observer motion. The ground is programmed as blocking variable. In other words, you determine the ground appearance (black vs gravel) for the whole stimulus presentation. The next time you run the script, you can change the ground. 
 
 ![gravel rgb](https://user-images.githubusercontent.com/69513270/183389233-74622d28-d2d0-4046-8fbd-2df1c1163270.png)
 
