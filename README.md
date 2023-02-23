@@ -13,7 +13,7 @@ These scripts are optimized for MatLab 2021b with Psychtoolbox (http://psychtool
 Download all the files and add them to your Matlab folder. Within your Matlab folder, create a subfolder names "functions". Move the scripts "geFrustum" and "genscramwalker" to this subfolder. 
 
 ## Explanation of the scripts
-- github_background_illusion.m: This is the main script creating the scene. 
+- github_walker_velocity.m: This is the main script creating the scene and running the experiment.
 - getFrustum.m: this script generates frustum data. The main script uses this script to do some calculations. No need to adapt this script.
 - genscramwalker.m: This script generates scrambled walker by randomly replacing the position of points. Motion trajectories are kept unchanged.
 - extrapolatewalkerdata.m: we extrapolated walker motion data (sample_walker3) to generate slightly slower and faster articulating walkers. The matching translation speed is generated in the main script. You do not need to do anything with that script. If you want to, you can extrapolate your own walker motion speeds with that script. The main script does not use this script.
