@@ -498,7 +498,7 @@ for trial = 1:length(trials)
         [mx, my, buttons] = GetMouse(screenid); %Returns the current (x,y) position of the cursor and the up/down state of the mouse buttons.
         
         %observer sets motion speed of the ground via mouse
-        tspeed_walker = mx/50000;        
+        tspeed_walker = mx/28000;        
 
 
         %% set scene and ground
@@ -670,6 +670,8 @@ for trial = 1:length(trials)
         %% get mouse and heading position and calculate heading error
         if any(buttons)
             [mx, ~, ~] = GetMouse(screenid);
+            tspeed_walker = mx/28000;
+            error =  tspeed_walker - translation_speed;
         end           
 
         Screen('Flip', win);
@@ -700,6 +702,7 @@ for trial = 1:length(trials)
     output(trial,14) = artspeed;
     output(trial,15) = translation_speed; % actual translation speed of the walkers
     output(trial,16) = tspeed_walker; %estimated walker velocity
+    output(trial,17) = error; % estimation error
     
 
     
