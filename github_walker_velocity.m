@@ -693,13 +693,13 @@ for trial = 1:length(trials)
     output(trial,7) = mean_walker_facing;
     output(trial,8) = heading_deg; %true observer heading
     output(trial,9) = mx; %cursor  x-axis nach dem die Kruve gezeichent wird. 
-    output(trial,10) = my; % cursor position along the y-axis
-    output(trial,11) = gravel; %1 = gravel, 0 = black ground
-    output(trial,12) = group_distance_z;
-    output(trial,13) = a;
-    output(trial,14) = gravel;
-    output(trial,15) = artspeed;
-    output(trial,16) = tspeed_walker; %estimated walker velocity
+    output(trial,10) = gravel; %1 = gravel, 0 = black ground
+    output(trial,11) = group_distance_z;
+    output(trial,12) = a;
+    output(trial,13) = gravel;
+    output(trial,14) = artspeed;
+    output(trial,15) = tspeed_walker; %estimated walker velocity
+    output(trial,16) = translation_speed; % actual translation speed of the walkers
 
     
     
