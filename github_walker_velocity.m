@@ -698,8 +698,9 @@ for trial = 1:length(trials)
     output(trial,12) = a;
     output(trial,13) = gravel;
     output(trial,14) = artspeed;
-    output(trial,15) = tspeed_walker; %estimated walker velocity
-    output(trial,16) = translation_speed; % actual translation speed of the walkers
+    output(trial,15) = translation_speed; % actual translation speed of the walkers
+    output(trial,16) = tspeed_walker; %estimated walker velocity
+    
 
     
     
