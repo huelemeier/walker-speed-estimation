@@ -698,11 +698,10 @@ for trial = 1:length(trials)
     output(trial,10) = gravel; %1 = gravel, 0 = black ground
     output(trial,11) = group_distance_z;
     output(trial,12) = a;
-    output(trial,13) = gravel;
-    output(trial,14) = artspeed;
-    output(trial,15) = translation_speed; % actual translation speed of the walkers
-    output(trial,16) = tspeed_walker; %estimated walker velocity
-    output(trial,17) = error; % estimation error
+    output(trial,13) = artspeed;
+    output(trial,14) = translation_speed; % actual translation speed of the walkers
+    output(trial,15) = tspeed_walker; %estimated walker velocity
+    output(trial,16) = error; % estimation error
     
 
     
