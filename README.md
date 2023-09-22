@@ -28,7 +28,7 @@ Open the script in Matlab and click on 'run'. Matlab automatically requires your
 You will see the stimulus presentation. After each presentation, you are required to estimate the walkers' average walking speed. For this purpose, a single walker appears. You can modify its walking speed by moving the mouse horizontally. Vertical movements switch the motion direction. Confirm your answer by pressing the left mouse buttom. Subsequently, the next trial starts. The script finishes when all trials are done.
 
 ## Technical information about the scene
-[Overview methods.pdf](https://github.com/huelemeier/walker-speed-estimation/files/12698619/Overview.methods.pdf)
+
 ## Point-light walkers
 We apply point-light walkers to operationalize human motion. These walkers originate from the motion-tracking data of a single walking human (de Lussanet et al., 2008). Each walker consists of 12 points corresponding to the ankles of a human body (knee, hip, hands, elbow, and shoulder joints). The walkers face either collectively to the left (-90°) or right (90°). 
 
