@@ -3,9 +3,6 @@ Obersevers encounter a group of point-light walkers. Walkers' limb motion combin
 
 
 
-https://user-images.githubusercontent.com/69513270/220873695-ce75bd3f-b2b9-43d7-b538-5b64a985bd64.mov
-
-
 https://github.com/huelemeier/walker-speed-estimation/assets/69513270/e708cb3d-4456-4f98-9897-9e6c8809bec2
 
 
