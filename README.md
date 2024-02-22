@@ -70,3 +70,7 @@ Participants' task is to reproduce the walker velocity (not self-motion velocity
 
 https://user-images.githubusercontent.com/69513270/220876935-5cf5cb2d-c025-42c1-950d-87bc50e7eca6.mov
 
+
+
+https://github.com/huelemeier/walker-speed-estimation/assets/69513270/db37c2ef-5932-41a3-bb5f-a7c4b5a840e0
+
